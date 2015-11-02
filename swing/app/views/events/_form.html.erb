@@ -19,10 +19,12 @@
     <%= f.label :description %><br>
     <%= f.text_field :description %>
   </div>
+
   <div class="field">
     <%= f.label :venue_id %><br>
-    <%= f.number_field :venue_id %>
+    <%= f.collection_select :venue_id, Venue.all, :id, :name %>
   </div>
+
   <div class="field">
     <%= f.label :start_time %><br>
     <%= f.number_field :start_time %>

@@ -5,6 +5,7 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
 </head>
 <body>
 <header>
@@ -12,13 +13,17 @@
     <ul>
       <li><%= link_to "Home", root_path %></li>
       <li><%= link_to "Users", users_path %></li>
-      <li><%= link_to "My Profile", current_user %></li>
-      <li><%= link_to "Edit My Profile", edit_user_registration_path %></li>
-      
+      <% if current_user %>
+      <li><%= link_to current_user.username, current_user %></li>
+      <li><%= link_to "Edit My Profile", edit_user_registration_path %></li>    
       <li><%= link_to "Posts", posts_path %></li>
-      <li><%= link_to "New Post", new_post_path %></li>
+      <li><%= link_to "Venues", venues_path %></li>
+      <li><%= link_to "Events", events_path %></li>
+      <li><%= link_to "Logout", "#" %></li>
+      <% else %>
       <li><%= link_to "Register", new_user_registration_path %></li>
       <li><%= link_to "Login", new_user_session_path %></li>
+      <% end %>
     </ul>
   </nav>
 </header>

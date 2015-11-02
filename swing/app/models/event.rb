@@ -1,3 +1,4 @@
 class Event < ActiveRecord::Base
-  belongs to :venues
+  belongs_to :venue
+  belongs_to :user
 end

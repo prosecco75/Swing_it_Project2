@@ -1,6 +1,7 @@
 class User < ActiveRecord::Base
+  has_many :posts
   has_many :venues
-  has_many :events, :through => :venues
+  has_many :events
 
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable

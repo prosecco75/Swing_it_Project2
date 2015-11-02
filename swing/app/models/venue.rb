@@ -1,3 +1,5 @@
 class Venue < ActiveRecord::Base
-  has many :events
+  has_many :events
+  belongs_to :user
+  has_many :posts
 end

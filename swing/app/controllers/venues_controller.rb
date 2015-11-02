@@ -24,7 +24,7 @@ class VenuesController < ApplicationController
   # POST /venues
   # POST /venues.json
   def create
-    @venue = Venue.new(venue_params)
+    @venue = current_user.venues.new(venue_params)
 
     respond_to do |format|
       if @venue.save
@@ -69,6 +69,6 @@ class VenuesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def venue_params
-      params.require(:venue).permit(:name, :description, :venue_id)
+      params.require(:venue).permit(:name, :description, :user_id)
     end
 end

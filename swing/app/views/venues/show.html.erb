@@ -11,9 +11,19 @@
 </p>
 
 <p>
-  <strong>Venue:</strong>
-  <%= @venue.venue_id %>
+  <strong>Created By:</strong>
+  <%= link_to @venue.user.username, @venue.user %>
 </p>
+
+
+<h4>Reviews:</h4>
+
+<ul>
+<% @venue.posts.each do |post| %>
+<li><%= link_to post.title, post %></li>
+<% end %>
+</ul>
+<br>
 
 <%= link_to 'Edit', edit_venue_path(@venue) %> |
 <%= link_to 'Back', venues_path %>
