@@ -24,7 +24,7 @@
     <%= f.label :venue_id %><br>
     <%= f.collection_select :venue_id, Venue.all, :id, :name %>
   </div>
-
+  
   <div class="field">
     <%= f.label :start_time %><br>
     <%= f.number_field :start_time %>
