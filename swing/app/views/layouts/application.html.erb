@@ -10,10 +10,11 @@
 <header>
   <nav>
     <ul>
-    <li><%= link_to "Users", users_path %></li>
-    <li><%= link_to "My Profile", current_user %></li>
-    <li><%= link_to "Edit My Profile", edit_user_registration_path %></li>
       <li><%= link_to "Home", root_path %></li>
+      <li><%= link_to "Users", users_path %></li>
+      <li><%= link_to "My Profile", current_user %></li>
+      <li><%= link_to "Edit My Profile", edit_user_registration_path %></li>
+      
       <li><%= link_to "Posts", posts_path %></li>
       <li><%= link_to "New Post", new_post_path %></li>
       <li><%= link_to "Register", new_user_registration_path %></li>
