@@ -25,6 +25,7 @@ class VenuesController < ApplicationController
   # POST /venues.json
   def create
     @venue = current_user.venues.new(venue_params)
+    # for current user to create new venue 
 
     respond_to do |format|
       if @venue.save
