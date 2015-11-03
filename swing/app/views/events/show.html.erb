@@ -1,6 +1,12 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <b>Image:</b>
+  <%= image_tag @event.image_image.url, width: 300%>
+</p> 
+
+
+<p>
   <strong>Name:</strong>
   <%= @event.name %>
 </p>

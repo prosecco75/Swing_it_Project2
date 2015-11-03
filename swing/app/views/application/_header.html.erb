@@ -11,12 +11,12 @@
       <!-- Right Nav Section -->
       <ul class="right">
         <li><%= link_to "Events", events_path %></li>
+        <li><%= link_to "Venues", venues_path %></li>
         <li><%= link_to "Users", users_path %></li>
         <% if user_signed_in? %>
         <li><%= link_to 'Add Event', new_event_path %></li>
         <li><%= link_to 'Add Review', new_post_path %></li>
         <li><%= link_to "Reviews", reviews_path %></li>
-        <li><%= link_to "Venues", venues_path %></li>
         <li class="has-dropdown">
           <a href="#"><%= current_user.username %></a>
           <ul class="dropdown">

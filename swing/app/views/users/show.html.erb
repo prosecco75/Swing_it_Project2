@@ -1,5 +1,10 @@
 <h1>User Profile Page</h1>
 
+<p>
+  <b>Image:</b>
+  <%= image_tag @user.user_image.url, width: 300%>
+</p>
+
 <%= image_tag @user.image  %>
 
 <%= @user.email  %>

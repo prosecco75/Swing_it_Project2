@@ -1,4 +1,9 @@
 <h1><%= @venue.name %></h1>
+
+<p>
+  <b>Image:</b>
+  <%= image_tag @venue.venue_image.url, width: 300%>
+</p>
 <p>
   <strong>Description:</strong>
   <%= @venue.description %>

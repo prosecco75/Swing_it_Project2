@@ -7,3 +7,7 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
   end
 end
+
+def user_params
+  params.require(:user).permit(:name, :venue_image)
+end
