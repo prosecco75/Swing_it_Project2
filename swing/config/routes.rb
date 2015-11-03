@@ -1,10 +1,9 @@
-  Rails.application.routes.draw do
+Rails.application.routes.draw do
+  root "posts#index"
   resources :venues
   resources :events
-    root "posts#index"
-    resources :posts
-    devise_for :users
-    resources :users, only: [:index, :show]
-  end
-
- 
+  resources :posts
+  get "reviews", to: "posts#index"
+  devise_for :users
+  resources :users, only: [:index, :show]
+end
