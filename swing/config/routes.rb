@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   resources :posts
   get "reviews", to: "posts#index"
   devise_for :users
-  resources :users, only: [:index, :show]
+  resources :users, only: [:index, :show, :edit]
 end
