@@ -1,27 +1,22 @@
 <h1><%= @venue.name %></h1>
 
-<p>
-  <b>Image:</b>
-  <%= image_tag @venue.venue_image.url, width: 300%>
-</p>
-<p>
-  <strong>Description:</strong>
-  <%= @venue.description %>
-</p>
-
+<%= image_tag @venue.venue_image.url, width: 300 %>
 <p>
   <strong>Created By:</strong>
   <%= link_to @venue.user.username, @venue.user %>
 </p>
 
+<p>
+  <strong>Description:</strong>
+  <%= @venue.description %>
+</p>
 
 <h4>Reviews:</h4>
 
 <ul>
-<% @venue.posts.each do |post| %>
-<li><%= link_to post.title, post %></li>
-<% end %>
+  <%= render @venue.posts %>
 </ul>
+
 <br>
 
 <%= link_to 'Edit', edit_venue_path(@venue) %> |

@@ -1,6 +1,5 @@
 <li>
-  <ul>
-  <li><h2><%= link_to venue.name, venue %></h2></li>
-    <li><%= venue.description %></li>
-  </ul>
+  <%= image_tag venue.venue_image.url %>
+  <h2><%= link_to venue.name, venue %></h2>
+  <%= venue.description %>
 </li>

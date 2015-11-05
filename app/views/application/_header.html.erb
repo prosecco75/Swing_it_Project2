@@ -10,14 +10,15 @@
     <section class="top-bar-section">
       <!-- Right Nav Section -->
       <ul class="right">
-        <li><%= link_to "Events", events_path %></li>
-        <li><%= link_to 'Add Event', new_event_path %></li>
-        <li><%= link_to "Venues", venues_path %></li>
-        <li><%= link_to "Add Venue", new_venue_path %></li>
-        <li><%= link_to "Reviews", reviews_path %></li>
-        <li><%= link_to 'Add Review', new_post_path %></li>
-        <li><%= link_to "Users", users_path %></li>
         <% if user_signed_in? %>
+          <li class="has-dropdown">
+            <a href="#">Add</a>
+            <ul class="dropdown">
+              <li><%= link_to 'Event', new_event_path %></li>
+              <li><%= link_to 'Venue', new_venue_path %></li>
+              <li><%= link_to 'Review', new_post_path %></li>
+            </ul>
+          </li>
           <li class="has-dropdown">
             <a href="#"><%= current_user.username %></a>
             <ul class="dropdown">
@@ -27,10 +28,21 @@
             </ul>
           </li>
         <% else %>
-        <li><%= link_to "Register", new_user_registration_path %></li>
-        <li><%= link_to "Sign in", new_user_session_path %></li>
+          <li>
+            <%= link_to "Register", new_user_registration_path %>
+          </li>
+          <li>
+            <%= link_to "Sign in", new_user_session_path %>
+          </li>
         <% end %>
       </ul>
+    </ul>
+
+    <ul class="left">
+      <li><%= link_to "Events", events_path %></li>
+      <li><%= link_to "Venues", venues_path %></li>
+      <li><%= link_to "Reviews", reviews_path %></li>
+      <li><%= link_to "Users", users_path %></li>
     </ul>
   </section>
 </nav>

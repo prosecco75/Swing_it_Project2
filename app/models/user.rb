@@ -6,5 +6,7 @@ class User < ActiveRecord::Base
  has_many :venues
  has_many :events
  
- mount_uploader :user_image, UserImageUploader
+ mount_uploader :image, UserImageUploader
+
+ validates :username, presence: true
 end

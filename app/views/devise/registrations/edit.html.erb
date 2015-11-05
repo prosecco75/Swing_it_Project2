@@ -14,8 +14,13 @@
   </div>
 
   <div class="field">
-    <%= f.label :image %><br />
-    <%= f.text_field :image%>
+    <%= f.label :image, "Upload an image" %><br>
+    <%= f.file_field :image %>
+  </div>
+
+  <div class="field">
+    <%= f.label :remote_image_url, "Or add an image from the web" %><br>
+    <%= f.text_field :remote_image_url %>
   </div>
 
   <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
