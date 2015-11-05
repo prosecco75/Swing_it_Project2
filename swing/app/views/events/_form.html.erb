@@ -15,6 +15,17 @@
     <%= f.label :name %><br>
     <%= f.text_field :name %>
   </div>
+
+  <div class="field">
+    <%= f.label :image, "Upload an image" %><br>
+    <%= f.file_field :image %>
+  </div>
+
+  <div class="field">
+    <%= f.label :remote_image_url, "Or add an image from the web" %><br>
+    <%= f.text_field :remote_image_url %>
+  </div>
+
   <div class="field">
     <%= f.label :description %><br>
     <%= f.text_field :description %>
@@ -26,8 +37,8 @@
   </div>
   
   <div class="field">
-    <%= f.label :event_date %><br>
-    <%= f.text_field :event_date %>
+    <%= f.label :date %><br>
+    <%= f.text_field :date %>
   </div>
 
   <div class="field">
@@ -41,10 +52,5 @@
   </div>
   <div class="actions">
     <%= f.submit class: "button expand" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :event_image %><br />
-    <%= f.file_field :event_image %>
   </div>
 <% end %>

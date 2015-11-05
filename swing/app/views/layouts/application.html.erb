@@ -3,29 +3,26 @@
 <head>
   <title>Swing It!</title>
   <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 </head>
 <body>
   <div class="wrapper">
     <%= render "header" %>
 
-    <div class="header-wrapper"></div>
-
     <% flash.each do |name, message| %>
       <div class="row flash-message flash-message-<%= name %>">
         <%= message %>
-  </div>  
-  
+      </div>  
     <% end %>
 
     <main class="row">
       <%= yield %>
     </main>
+
     <div class="push"></div>
-   </div>
-   
+  </div>
 
   <footer class="row">
     <nav>
