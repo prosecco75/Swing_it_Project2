@@ -1,5 +1,5 @@
 <li>
-  <%= image_tag event.image.url %>
+  <%= image_tag event.image.thumb %>
   <h3><%= link_to event.name, event %></h3>
   at <%= event.venue.try(:name) %>
   <%= event.description %>
