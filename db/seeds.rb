@@ -5,26 +5,30 @@ Post.destroy_all
 User.destroy_all
 
 # Create users:
-u1 = User.create!(email: "ocha@hotmail.com", password: "password", username: "alex", remote_image_url: "http://www.one2onephotography.co.uk/image/portrait/men/men-images-1.jpg")
+u1 = User.create!(email: "ocha@hotmail.com", password: "password", username: "Sandro", remote_image_url: "http://www.one2onephotography.co.uk/image/portrait/men/men-images-1.jpg")
 
-u2 = User.create!(email: "Tom@hotmail.com", password: "password", username: "alex", remote_image_url: "http://s266022009.onlinehome.us/NewWebsite/imgs/portrait_08.jpg")
+u2 = User.create!(email: "Tom@hotmail.com", password: "password", username: "Maria", remote_image_url: "http://s266022009.onlinehome.us/NewWebsite/imgs/portrait_08.jpg")
 
-u3 = User.create!(email: "john@hotmail.com", password: "password", username: "john", remote_image_url: "http://www.bishopsgate.org.uk/i.aspx?s=1&w=280&i=/uploads/media/108/8956.jpg")
+u3 = User.create!(email: "john@hotmail.com", password: "password", username: "John", remote_image_url: "https://i.vimeocdn.com/portrait/8813609_600x600.jpg")
 
-u5 = User.create!(email: "cory@hotmail.com", password: "password", username: "cory", remote_image_url: "http://www.brolive.org/photo_gallery/photos-skateboarder-6/Antoine_Verhille_portrait.jpg")
+u4 = User.create!(email: "Nicolas@hotmail.com", password: "password", username: "Nicolas", remote_image_url: "https://deaenij3kiw8r.cloudfront.net/system/users/avatars/141380/original/production-b3612f96cc66fee631be82853dd2c316-man_bartlett_bw.jpg?1369799811")
 
-u6 = User.create!(email: "kirsty@hotmail.com", password: "password", username: "kirst", remote_image_url: "http://img02.deviantart.net/7127/i/2013/049/c/1/mila_kunis_2__portrait__by_chrischoe-d5vf8s8.jpg")
+u5 = User.create!(email: "alice@hotmail.com", password: "password", username: "Alice", remote_image_url: "https://c1.staticflickr.com/9/8112/8551013855_f0362d856d_b.jpg")
 
-u7 = User.create!(email: "ben@hotmail.com", password: "password", username: "ben", remote_image_url: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTz4_y6XGTp2V47DLKThBWzIOdrQAnyixalFqT-CSgswMZDjixe")
+u6 = User.create!(email: "kirsty@hotmail.com", password: "password", username: "Kirsty", remote_image_url: "http://thumbs.dreamstime.com/x/beautiful-woman-portrait-11713329.jpg")
+
+u7 = User.create!(email: "ben@hotmail.com", password: "password", username: "Ben", remote_image_url: "https://pbs.twimg.com/profile_images/458818487880675328/STwq8_Jm.jpeg")
+
+u8 = User.create!(email: "Stephane@hotmail.com", password: "password", username: "Stephane", remote_image_url: "http://www.rca.ac.uk/media/images/Florian-A-Schmidt_portrait-_web.width-200.jpg")
 
 # Create venues:
 v1 = u1.venues.create!(name: "Swing Penge", description: "Perfect venue for a romantic evening", remote_image_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzL6RqP70jO573VpoK6GXfIV_24mLSkqktEapfYr5QACsFKR6v")
 
-v2 = u2.venues.create!(name: "Boogaloo Bounce", description: "Great venue for a fun night out!", remote_image_url: "http://www.nhmusic.co.uk/images/nhm/tn_560_weddings.jpg")
+v2 = u2.venues.create!(name: "Boogaloo", description: "Great venue for a fun night out!", remote_image_url: "http://www.nhmusic.co.uk/images/nhm/tn_560_weddings.jpg")
 
 v3 = u3.venues.create!(name: "Swing Pit", description: "Where music meets class!!", remote_image_url: "http://www.bonvivant.co.uk/old_blog/wp-content/uploads/2012/11/herr-kettners-kabaret-candlelight-club-220612-152.jpg")
 
-v4 = u1.venues.create!(name: "Swing at the Blueberry", description: "Delicious food in a lovely decor", remote_image_url: "http://swingdance.la/wp-content/uploads/2012/12/IMG_6894_small-1024x682.jpg")
+v4 = u1.venues.create!(name: "Blueberry", description: "Delicious food in a lovely decor", remote_image_url: "http://swingdance.la/wp-content/uploads/2012/12/IMG_6894_small-1024x682.jpg")
 
 v5 = u5.venues.create!(name: "21 Club", description: "I can only recommend this hidden away little gem", remote_image_url: "https://s-media-cache-ak0.pinimg.com/736x/3b/23/5b/3b235b63070977cb47d21ac93499b532.jpg")
 
@@ -38,7 +42,7 @@ v9 = u7.venues.create!(name: "Swing dancing", description: "New York style vue f
 
 v10 = u1.venues.create!(name: "Swing time", description: "Well established and unpretencious, highly recommended", remote_image_url: "http://www.neilwilliamshaw.co.uk/wp-content/uploads/2014/01/DSC_5571.jpg")
 
-v11 = u1.venues.create!(name: "The Candlelight club", description: "Stylish venue for a sophisticated crowd", remote_image_url: "http://www.thecandlelightclub.com/pastevents/9%20July%202011/My%20pix/IMG_8207crpaY.jpg")
+v11 = u1.venues.create!(name: "Candlelight", description: "Stylish venue for a sophisticated crowd", remote_image_url: "http://www.thecandlelightclub.com/pastevents/9%20July%202011/My%20pix/IMG_8207crpaY.jpg")
 
 v12 = u1.venues.create!(name: "A-Train", description: "Dark classy spot that takes you back to the Prohibition days!!!", remote_image_url: "https://s-media-cache-ak0.pinimg.com/736x/5c/9f/2b/5c9f2bfeaa9f47799b4473f4ca61db67.jpg")
 

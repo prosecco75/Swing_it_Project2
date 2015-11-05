@@ -1,6 +1,5 @@
 <li>
   <ul>
-    <li><%= link_to post.title, post %></li>
-    <li><%= post.user.username %></li>
+    <li><%= link_to post.title, post %> reviewed by <%= link_to post.user.username, post.user %></li>
   </ul>
 </li>
