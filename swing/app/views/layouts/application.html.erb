@@ -11,17 +11,21 @@
   <div class="wrapper">
     <%= render "header" %>
 
+    <div class="header-wrapper"></div>
+
     <% flash.each do |name, message| %>
       <div class="row flash-message flash-message-<%= name %>">
         <%= message %>
-      </div>  
+  </div>  
+  
     <% end %>
 
     <main class="row">
       <%= yield %>
     </main>
     <div class="push"></div>
-  </div>
+   </div>
+   
 
   <footer class="row">
     <nav>

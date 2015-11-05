@@ -25,6 +25,10 @@ header {
   margin: 10px auto; 
 }
 
+.header-wrapper {
+  position: fixed;
+}
+
 .title-area .name h1 {
   font-weight: 700;
   text-transform: uppercase
