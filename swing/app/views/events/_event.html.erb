@@ -1,8 +1,0 @@
-<li>
-  <ul>
-    <li><h3><%= link_to event.name, event %></h3></li>
-    <li>at <%= event.venue.try(:name) %></li>
-    <li><%= event.description %></li>
-    <li><%= event.start_time %>h-<%= event.end_time %>h</li>
-  </ul>
-</li>
