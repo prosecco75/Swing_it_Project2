@@ -1,6 +1,6 @@
 <h1><%= @venue.name %></h1>
 
-<%= image_tag @venue.venue_image.url, width: 300 %>
+<%= image_tag @venue.image.url, width: 300 %>
 <p>
   <strong>Created By:</strong>
   <%= link_to @venue.user.username, @venue.user %>

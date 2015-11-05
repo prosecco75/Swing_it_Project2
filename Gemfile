@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'carrierwave', '0.10.0'
-
+gem 'rmagick'
 gem 'foundation-rails'
 
 gem 'devise'
