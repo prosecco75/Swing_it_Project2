@@ -1,7 +1,7 @@
 <li>
   <ul class="no-bullet text-center">
     <li class="event-image"><%= image_tag event.image.thumb %></li>
-    <li><h3><%= link_to event.name, event %></h3></li>
+    <li><h1><%= link_to event.name, event %></h1></li>
     <li>on <%= event.date.strftime("%d %B %Y") %></li>
     <li>at <%= event.venue.try(:name) %></li>
     <li><%= event.description %></li>

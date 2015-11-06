@@ -5,17 +5,17 @@ Post.destroy_all
 User.destroy_all
 
 # Create users:
-u1 = User.create!(email: "ocha@hotmail.com", password: "password", username: "Sandro", remote_image_url: "http://www.one2onephotography.co.uk/image/portrait/men/men-images-1.jpg")
+u1 = User.create!(email: "sandro@hotmail.com", password: "password", username: "Sandro", remote_image_url: "http://www.one2onephotography.co.uk/image/portrait/men/men-images-1.jpg")
 
-u2 = User.create!(email: "Tom@hotmail.com", password: "password", username: "Maria", remote_image_url: "http://s266022009.onlinehome.us/NewWebsite/imgs/portrait_08.jpg")
+u2 = User.create!(email: "maria@hotmail.com", password: "password", username: "Maria", remote_image_url: "http://s266022009.onlinehome.us/NewWebsite/imgs/portrait_08.jpg")
 
 u3 = User.create!(email: "john@hotmail.com", password: "password", username: "John", remote_image_url: "https://i.vimeocdn.com/portrait/8813609_600x600.jpg")
 
 u4 = User.create!(email: "Nicolas@hotmail.com", password: "password", username: "Nicolas", remote_image_url: "https://deaenij3kiw8r.cloudfront.net/system/users/avatars/141380/original/production-b3612f96cc66fee631be82853dd2c316-man_bartlett_bw.jpg?1369799811")
 
-u5 = User.create!(email: "alice@hotmail.com", password: "password", username: "Alice", remote_image_url: "https://c1.staticflickr.com/9/8112/8551013855_f0362d856d_b.jpg")
+u5 = User.create!(email: "alice@hotmail.com", password: "password", username: "Alice", remote_image_url: "http://farm5.static.flickr.com/4104/4835328732_ec59fe8d4c.jpg")
 
-u6 = User.create!(email: "kirsty@hotmail.com", password: "password", username: "Kirsty", remote_image_url: "http://thumbs.dreamstime.com/x/beautiful-woman-portrait-11713329.jpg")
+u6 = User.create!(email: "kirsty@hotmail.com", password: "password", username: "Kirsty", remote_image_url: "http://www.starcentralmagazine.com/wp-content/uploads/2013/07/3c.jpg")
 
 u7 = User.create!(email: "ben@hotmail.com", password: "password", username: "Ben", remote_image_url: "https://pbs.twimg.com/profile_images/458818487880675328/STwq8_Jm.jpeg")
 
