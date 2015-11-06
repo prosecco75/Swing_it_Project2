@@ -9,23 +9,23 @@ The approach
 1. The App is designed to list various swing dancing events in London pulling out the information from a database. 
 
 2. The Navigation bar has five sections : Home (Swing 23), Events, Venues, Reviews and Users. When clicking on each section, the user is directed to another page that provides information on the actual section clicked on. 
-![](./images/homepage.png)
+![](./desktop/homepage.png)
 
 3. On the Events page, a list of Events with the venue picture, Event name, Event date, Venue name, time are listed. When clicking on the Event name, the user is redirected to another page with further details on the actual event including a short review written by the user. 
-![](./images/events.png)
+![](./desktop/events.png)
 
 4. The Venues page displays a list of Venues with a short description
-![](./login/venues.png)
+![](./desktop/venues.png)
 
 3. Users are able to Register storing their personal information onto the database, they can add their photo onto their profile, log in/log out and edit their profile. 
 4. Only registered Users can add their own reviews on Venues and rate them section
-![](./images/signup.png)
+![](./desktop/signup.png)
 
 5. In the Users section, when clicking on the user's name, we are taken to the User's profile and we can view the list of reviews created by the user.
-![](./images/pics.png)
+![](./desktop/pics.png)
 
 6. In the Add drop down menu, users can add their Event, Venue and Review as well as uploading pictures. 
-![](./images/reviews.png)
+![](./desktop/reviews.png)
 
 
 
